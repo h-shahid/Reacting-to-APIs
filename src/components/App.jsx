@@ -37,7 +37,7 @@ export default class App extends React.Component {
             return this.state.films.map(film => {
                 return (
                     <div key={film.id} className="card-body">
-                        <div className="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                        <div className="card text-white bg-dark mb-3" id="card" >
 
                             <h5 className="card-title">{film.title}</h5>
                             <h6 className="subtitle mb-2 text-muted">{film.director}</h6>
@@ -54,7 +54,7 @@ export default class App extends React.Component {
             this.loadPeople()
             return this.state.people.map(person => {
                 return (
-                    <div key={person.id} className="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div key={person.id} className="card text-white bg-dark mb-3">
 
                         <div className="card-body">
                             <h5 className="card-title">{person.name}</h5>
